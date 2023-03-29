@@ -22,7 +22,9 @@ VStack {
     }
     Map(coordinateRegion: $model.region,
         showsUserLocation: true,
-        annotationItems: $model.locations) { MapMarker(coordinate: $0.coordinates.wrappedValue, tint: .orange) }
+        annotationItems: $model.locations) {
+            MapMarker(coordinate: $0.coordinates.wrappedValue, tint: .orange)
+        }
 }.padding()
 ```
 
